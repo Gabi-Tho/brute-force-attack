@@ -8,10 +8,13 @@ for ($i=0; $i< count($chars); $i++){
     for ($j=0; $j< count($chars); $j++){
         for ($k=0; $k< count($chars); $k++){
             $mdp3= $chars[$i].$chars[$j].$chars[$k];
+            if ($mdp3 == "hb1"){
+                echo "correct password";
+            }
             for ($l=0; $l< count($chars); $l++){
-                $mdp3= $chars[$i].$chars[$j].$chars[$k].$chars[$l];
+                $mdp4= $chars[$i].$chars[$j].$chars[$k].$chars[$l];
                 for ($m=0; $m< count($chars); $m++){
-                    $mdp4= $chars[$i].$chars[$j].$chars[$k].$chars[$l].$chars[$m];
+                    $mdp5= $chars[$i].$chars[$j].$chars[$k].$chars[$l].$chars[$m];
                 }
             }
             
